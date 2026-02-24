@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Attendance.css">
+    
+</head>
+<body>
+    <div class="Container">
+
+
+        <h1 id="heading">Attendance Sheet</h1>
+        <div id="int-container">
+        <input type="text"  id="name" placeholder="Enter your name">
+        <input type="date"  id="date">
+        <select id="branch">
+            <option value="">Select Branch</option>
+            <option value="CS">CS</option>
+            <option value="IT">IT</option>
+            <option value="Mech">Mech</option>
+            <option value="E&TC">E&TC</option>
+        </select>
+            <BUtton id="add-btn" onclick="attendanceBox()">ADD</BUtton>
+            </div>
+
+
+            <div id="table-box">
+                <table id="info-table">
+                    <thead>
+                      <tr>
+                      <th>Name</th>
+                      <th>Date</th>
+                      <th>Branch</th>
+                      <th>Action </th>
+                     </tr>
+                     </thead>
+                    <tbody id="Attendance-list">
+                    
+                    </tbody>
+                </table>
+            </div>
+        
+    </div>
+
+    <script src="Attendance.js"></script>
+</body>
+</html>
