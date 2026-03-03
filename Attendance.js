@@ -18,7 +18,7 @@ if(branchHolder === ""){
     alert("Please enter branch");
     return;
 }
-alert("Do you want to add the attendance?");
+confirm("Do you want to add the attendance?");
        
     
 
@@ -51,7 +51,7 @@ alert("Do you want to add the attendance?");
     deleteBtn.style.cursor = "pointer";
 
     deleteBtn.addEventListener('click', () => {
-        alert("Do you want to delete");
+        confirm("Do you want to delete");
         result.removeChild(newRow);
     });
     actionCell.appendChild(deleteBtn);
